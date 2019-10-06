@@ -1,1 +1,0 @@
-# Swarm for dApp Developers - Getting started with Swarm

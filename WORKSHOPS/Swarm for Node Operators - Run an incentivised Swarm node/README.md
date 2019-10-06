@@ -1,3 +1,8 @@
+# 14:40 - 15:50
+| Presenter |Title|
+| -------- | -------- |
+| Swarm Team & IOV | Swarm for Node Operators - Run an incentivised Swarm node.|
+
 # Intro
 Dear participant of the Swarm incentives workshop. Thank you for being here and congratulations on being one of the first to try out Swarm with the Swarm Accounting Protocol (SWAP) enabled! The Swarm team is very proud of the work which you are about to test. We think that this feature hallmarks the start of a truly scalable and censorship-resistant Swarm.
 SWAP works by compensating you for the chunks served to your peers, while you have to compensate your peers for chunks served to you. All of this, you will be able to witness by yourself soon, but first: let’s talk about the setup of the workshop!
