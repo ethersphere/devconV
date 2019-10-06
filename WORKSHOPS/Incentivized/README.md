@@ -16,8 +16,8 @@ Bring your laptop to participate.
 | [@eknir](https://github.com/eknir/) | [@vojtechsimetka](https://github.com/vojtechsimetka)| 
 
 
-About Rinke
+### About Rinke
 Rinke Hendriksen is a smart-contract developer and crypto-economist and, being part of the Swarm incentive track, he has contributed to making incentives on Swarm reality. Rinke has a background in economics and Finance, with a Bachelor of Science in Economy and all exams passed to call himself a Chartered Alternative Investment Analyst. Nevertheless, he decided not to follow the conventional path and choose to pursue a career in Blockchain instead. After following the MSc in Digital Currencies at the University of Nicosia and spending many spare hours to become up to speed with (smart-contract) development he now contributes full force to make the blockchain vision a success.
 
-About Vojtech
+### About Vojtech
 Vojtech is a software developer, product owner for RIF Storage, passionate volunteer, co-founder and core contributor of Blockchain for Humanity and Giveth initiatives. He has worked at CERN, the European Organization for Nuclear Research, as a software developer leading small team to develop tool similar to google street view and as Parallel Database Configuration Manager. While at CERN he helped to organize and coach a number of humanitarian hackathons where they’ve combined creative minds from CERN and non-profit organizations in interdisciplinary teams to work on current humanitarian problems.​ In 2017, Vojtech left CERN to fully focus on Giveth and Blockchain for Humanity and is currently developing decentralised storage solution for RIF OS.
