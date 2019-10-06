@@ -1,0 +1,1 @@
+# SWARM - A core infrastructure to augment Ethereum with distributed storage and secure messaging
