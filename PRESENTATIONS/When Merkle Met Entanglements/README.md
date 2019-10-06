@@ -1,1 +1,15 @@
-# When Merkle Met Entanglements
+
+## 16:00 - 16:20
+| Presenter |Title|
+| -------- | -------- |
+| Dr. Vero Estrada-Galiñanes, Racin Nygaard | When Merkle Met Entanglements| 
+
+## Dr. Vero Estrada-Galiñanes (presenter), Racin Nygaard: When Merkle Met Entanglements
+
+This talk is about our collaboration with ETH Swarm team towards a reliable long-term decentralised storage system. The introduction offers an overview about redundancy and erasure codes, tailored to developers (and audacious general public) who want to gain insight into redundancy mechanisms without requiring deeper understanding of complex mathematical formulas. The core of this presentation highlights my previous doctoral research on entanglement codes, and how we implemented them on top of Swarm to increase file availability in spite of missing chunks. Our proof of concept got the first prize at Ethereum Madrid Hackaton 2019. Alpha entanglement codes build a lattice of intertwined chains that alternate data and redundant data. The lattice provides different paths for reconstructing missing chunks and it has an optimal use of bandwidth in the case of random access. Currently, we are investigating how to integrate entanglements with Merkle trees to build an authenticated data structure with built-in redundancy to protect files and key-value stores inside Swarm. The motivation for this work is two-fold: 1. Increasing the feasibility of using decentralised storage, such Swarm in our project BBCHAIN, 2. Identifying opportunities and addressing challenges for storing Ethereum tries in Swarm.
+
+### About Vero
+Dr. Vero Estrada-Galiñanes is an established researcher affiliated with the University of Stavanger, Norway. Dr. Estrada is a member of the Resilient Systems Lab and collaborates with Prof. Hein Meling and his team in the project BBChain: Efficient Trustworthy Computing with Blockchains and Biometrics, funded by the Research Council of Norway. Her research interests include storage, security and distributed systems. She holds a PhD from the University of Neuchatel, Switzerland. Her thesis on entanglement codes have attracted the interest of academia and industry. She holds a Master degree in Applied Computer Science from the University of Tokyo and an Electronic Engineer Diploma from University of Buenos Aires. Previous to her academic career, she worked several years in engineering and leadership roles for the private and public sector.
+
+### About Racin
+Racin Nygaard is a Research Fellow at the University of Stavanger. Racin is studying the feasibility of a distributed storage system for authenticated documents based on blockchain technology. Racin received his Master’s degree in Computer Science from the University of Stavanger in June 2018, and has since then worked in the same lab towards his PhD. The topic of the concluding Master’s Thesis was Distributed Storage with Strong Data Integrity based on Blockchain Mechanisms. Recently, he presented a poster paper at ACM SAC 2019, DADS track, titled Distributed Storage System based on Permissioned Blockchain. Racin worked full time as a senior software developer for five years before his academic positions.
