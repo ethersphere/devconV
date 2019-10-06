@@ -1,7 +1,7 @@
 
 | Presenter |Title|
 | -------- | -------- |
-| Swarm Team & IOV | **Workshop:** Swarm for Node Operators - Run an incentivised Swarm node.|
+| Vojtech Simetka, Rinke Hendriksen, Swarm team | **Workshop:** Swarm for Node Operators - Run an incentivised Swarm node.|
 
 ## Workshop: Swarm for Node Operators - Run an incentivised Swarm node
 In this workshop we will playfully introduce you to setting up up and operating an incentivised Swarm node - marking the first ever live test of an  incentivised Swarm Network. The workshop will cover installation and setup, security best practices, a UI demonstration & a walkthrough. This represents joint work of the Swarm Team and IOV Labs.
