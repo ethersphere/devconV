@@ -12,7 +12,7 @@ Bring your laptop to participate.
 
 | **Rinke Hendriksen**| **Vojtech Simetka** |
 |------------------------------------------------------	|------------------------------------------------------	|
-| ![](https://avatars0.githubusercontent.com/u/33000441?s=460&v=4){:height="100px" width="100px"} 	| ![](https://avatars3.githubusercontent.com/u/7974813?s=460&v=4){:height="100px" width="100px"} 	|
+| <img src="https://avatars0.githubusercontent.com/u/33000441" width="200px"/> | <img src = "https://avatars3.githubusercontent.com/u/7974813" width="200"/>|	|
 | [@eknir](https://github.com/eknir/) | [@vojtechsimetka](https://github.com/vojtechsimetka)| 
 
 
