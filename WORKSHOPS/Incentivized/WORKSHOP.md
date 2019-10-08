@@ -204,8 +204,7 @@ In order to send a cheque, you have to use more resources than your peer. As was
 ## Earn the badge
 Requesting content is easiest done through the Swarm portal. Go to your browser and navigate to [localhost:8500](localhost:8500)
 
-If you have your Swarm instance running, you should be able to see a bar where you can request content. In Swarm, all content is content-addressed, meaning that the location of the file is based on the content of the file. Specifically, you have to request the root hash of a file. Please request: `6875e293bb58afd0f533a39024eafff1b1defdcba9b10861fcb7913e77dcbb7e` (a pleasant surprise awaits you!)
-**TODO: upload picture and change hash**
+If you have your Swarm instance running, you should be able to see a bar where you can request content. In Swarm, all content is content-addressed, meaning that the location of the file is based on the content of the file. Specifically, you have to request the root hash of a file. Please request: `1465b78d7c8a4f0aa931ebeac06f4be867a37f8d7df1a48a7d67ca53bb4e0531`.
 
 Did you already send a cheque? If not, you need to download something else as well (just re-downloading won’t trigger more SWAP payments, as the content is cached). You can upload any content by typing in a new terminal:
 
