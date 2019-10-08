@@ -128,7 +128,7 @@ Adding p2p peer and handshake. This means the protocol is running and you are be
 --wsapi=accounting,bzz,swap \
 --wsorigins="*"
 ```
-Now, navigate to [https://swarm-monitor.netlify.com/](https://swarm-monitor.netlify.com/) or the local version [http://192.168.55.106:5000](http://192.168.55.106:5000)
+Now, navigate to [https://swarm-monitor.netlify.com/](https://swarm-monitor.netlify.com/) or the local version [http://192.168.55.106:3000](http://192.168.55.106:3000)
 </details>
 
 <details>
