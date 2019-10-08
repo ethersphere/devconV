@@ -103,6 +103,7 @@ If you are still running Swarm, shut down this process and start it again, now s
 --bzznetworkid 5 \
 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@192.168.55.102:30399" \
 --verbosity=4
+--nat ip:192.168.55.xxx
 ```
 
 That’s all. If the network you just joined is actively used, you will be receiving cheques automatically. The only problems is... The network you are on is not by default actively used; You and other participants of the workshop need to create traffic! To help out your neighbor earning this badge (let’s assume reciprocity, so you will eventually earn your badge as well), please proceed to the next section (“Have a cheque been cashed”).
@@ -127,6 +128,7 @@ Adding p2p peer and handshake. This means the protocol is running and you are be
 --wsaddr=0.0.0.0 \
 --wsapi=accounting,bzz,swap \
 --wsorigins="*"
+--nat ip:192.168.55.xxx
 ```
 Now, navigate to [https://swarm-monitor.netlify.com/](https://swarm-monitor.netlify.com/) or the local version [http://192.168.55.106:3000](http://192.168.55.106:3000)
 </details>
