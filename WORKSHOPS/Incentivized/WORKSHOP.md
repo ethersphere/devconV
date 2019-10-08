@@ -15,9 +15,7 @@ The rest of the handout walks you through all steps needed to install Swarm, run
 This handout consists of 3 chapters, one for every badge. In every chapter, you will find instructions on how to achieve the badges as well as background information, for those wishing to know more.
 
 # 0. Prerequisites
-To download Swarm, you can copy the GitHub repo and compile the source code (required git and go). If you don’t have git and go please proceed with installing the binaries for [Linux (ubuntu)](https://swarm-monitor.netlify.com/binaries/linux/swarm), [macOS](https://swarm-monitor.netlify.com/binaries/mac/swarm) or [Windows](https://swarm-monitor.netlify.com/binaries/windows/swarm.exe). 
-**TODO** update binaries
-**TODO** update this section (Choice between github and binaries is not clear)
+To download Swarm, you can copy the GitHub repo and compile the source code (required git and go). If you don’t have git and go please proceed with installing the [binaries](http://192.168.55.103:9999).
 
 # 1. Deploy a chequebook
 In order to earn this badge, you could theoretically just copy the source code of the chequebook and deploy it, but that is not what we intended! We would like you to start Swarm with SWAP enabled, which will automatically deploy a chequebook for you if it is the first time you boot up Swarm.
@@ -27,7 +25,7 @@ To run Swarm with SWAP enabled, simply run:
 `./swarm`
 With the command-line options:
 ```
---swap --swap-backend-url https://rinkeby.infura.io/v3/4f7e7287d52447ab8865dbdcf7c203e1 --bzznetworkid 5
+--swap --swap-backend-url http://192.168.55.102:8545 --bzznetworkid 5
 ```
 
 
@@ -35,8 +33,8 @@ The first time you will do this, it will:
 1) create an Ethereum account for you and stores this encrypted in the folder `.ethereum/keystore` (linux), `~/Library/Ethereum`, `/Appdata/Roaming/Ethereum` (Windows)
 2) attempts to deploy a chequebook contract for you from the account which you just created.
 
-Deploying a chequebook will fail because your newly created account does not have any Rinkeby Ethers. Please ask the course facilitators to fund your account. Paste your address [here](https://docs.google.com/document/d/1O4tde_uGDWgp2yakmhvEHqERbIl9kI76o9IUDFKDoQY/edit?usp=sharing)   **TODO: make this a faucet**
-Now, run the command again, but be sure to send at least 0.1 Rinkeby ether together with the deployment. This is 1 with 17 zeroes (100000000000000000) Wei. If you don’t send sufficient funds, you won’t be able to achieve all the badges. 
+Deploying a chequebook will fail because your newly created account does not have any Testnet Ethers. You can get some from the faucet at http://192.168.55.102.
+Now, run the command again, but be sure to send at least 0.1 testnet ether together with the deployment. This is 1 with 17 zeroes (100000000000000000) Wei. If you don’t send sufficient funds, you won’t be able to achieve all the badges. 
 
 Congratulations on earning the first badge!
 
@@ -73,10 +71,10 @@ Swarm with SWAP enabled is currently only allowed on bzznetworkid 5
 ### Logs to pay attention to
 When running Swarm with SWAP enabled, a couple of interesting logs pass by. We sum up those worth paying attention to:
 
-`Connecting to SWAP API. url=https://rinkeby.infura.io/v3/...`
+`Connecting to SWAP API. url=http://192.168.55.102:8545...`
 Swarm tells you it is attempting to make a connection to the blockchain which you specified as a command-line option (swap-backend-url). It does so by pinging and waiting for a response. 
 
-`Using backend network ID. ID=3 `
+`Using backend network ID. ID=14191 `
 Every Ethereum network has a network ID (set in the Genesis block). This identifier is used to make sure that a transaction send on mainnet (for example) is invalid on a testnet. 4 stands for Rinkeby.
 
 `Deploying new swap. owner=0x..., deposit=value`
@@ -101,12 +99,11 @@ If you are still running Swarm, shut down this process and start it again, now s
 ```
 ./swarm \
 --swap \
---swap-backend-url https://rinkeby.infura.io/v3/4f7e7287d52447ab8865dbdcf7c203e1 \
+--swap-backend-url http://192.168.55.102:8545 \
 --bzznetworkid 5 \
---bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@104.248.85.109:30399" \
+--bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@192.168.55.102:30399" \
 --verbosity=4
 ```
-**TODO: change bootnode URL**
 
 That’s all. If the network you just joined is actively used, you will be receiving cheques automatically. The only problems is... The network you are on is not by default actively used; You and other participants of the workshop need to create traffic! To help out your neighbor earning this badge (let’s assume reciprocity, so you will eventually earn your badge as well), please proceed to the next section (“Have a cheque been cashed”).
 
@@ -122,17 +119,15 @@ Adding p2p peer and handshake. This means the protocol is running and you are be
 ```
 ./swarm \
 --swap \
---swap-backend-url https://rinkeby.infura.io/v3/4f7e7287d52447ab8865dbdcf7c203e1 \
+--swap-backend-url http://192.168.55.102:8545 \
 --bzznetworkid 5 \
---bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@104.248.85.109:30399" \
+--bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@192.168.55.102:30399" \
 --verbosity=4 \
 --ws \
 --wsaddr=0.0.0.0 \
 --wsapi=accounting,bzz,swap \
 --wsorigins="*"
 ```
-**TODO** change bootnode URL
-**TODO** make better instructions
 Now, navigate to https://swarm-monitor.netlify.com/ 
 </details>
 
@@ -178,7 +173,6 @@ The beauty of a cheque lies in the fact that the sum is always cumulative; this 
 ## Payment threshold and the chunk-o-meter
 The Swarm Accounting Protocol accounts for balances with your peers
 The payment threshold is defined as the amount of honey (Swarms internal accounting unit) at which your peer will initiate payments to other peers. The payment threshold is set in such a way that, in case of equal consumption of chunks, no cheques need to be sent. In case of unequal or high variability of consumption, peers will automatically start compensating each other once the chunk-o-meter tilts too much to one side.
-**TODO: low priority: update GIF (no pay me message)**
 ![](https://www.rifos.org/wp-content/uploads/2019/07/5.-swap.gif)
 </details>
 
